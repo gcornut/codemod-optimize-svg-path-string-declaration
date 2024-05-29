@@ -1,5 +1,6 @@
-import type { FileInfo, API, Options, StringLiteral } from 'jscodeshift';
-import svgo from 'svgo';
+import type { FileInfo, API, StringLiteral } from 'jscodeshift';
+// @ts-ignore
+import svgo from 'svgo/dist/svgo.browser.js';
 
 // RegExp used to detect the start of a svg path string
 const SVG_PATH_START_RX = /^[Mm]\d/;
