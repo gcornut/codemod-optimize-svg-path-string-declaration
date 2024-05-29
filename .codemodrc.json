@@ -1,0 +1,10 @@
+{
+  "name": "optimize-svg-path-string-declaration",
+  "version": "1.0.0",
+  "engine": "jscodeshift",
+  "private": false,
+  "arguments": [],
+  "meta": {
+    "tags": []
+  }
+}
