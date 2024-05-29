@@ -1,10 +1,11 @@
 {
   "name": "optimize-svg-path-string-declaration",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "engine": "jscodeshift",
   "private": false,
   "arguments": [],
   "meta": {
-    "tags": []
+    "tags": [],
+    "git": "https://github.com/gcornut/codemod-optimize-svg-path-string-declaration.git"
   }
 }
