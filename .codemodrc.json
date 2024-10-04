@@ -1,7 +1,7 @@
 {
   "name": "optimize-svg-path-string-declaration",
   "version": "1.0.3",
-  "engine": "jscodeshift",
+  "engine": "workflow",
   "private": false,
   "arguments": [],
   "meta": {

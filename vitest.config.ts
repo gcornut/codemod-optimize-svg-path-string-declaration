@@ -4,7 +4,7 @@ export default defineConfig({
   test: {
     include: [...configDefaults.include, '**/test/*.ts'],
     server: {
-      deps: {inline: ['svgo']}
+      deps: { inline: ['svgo'] }
     }
   },
 });
