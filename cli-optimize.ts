@@ -1,6 +1,6 @@
 #!/usr/bin/env bun
 
-import { optimizeSVGPath } from "./src";
 import fs from 'node:fs';
+import { multiPassOptimizePath } from "./src/optimize";
 
-console.log(optimizeSVGPath(String(fs.readFileSync(0))));
+console.log(multiPassOptimizePath(String(fs.readFileSync(0))));

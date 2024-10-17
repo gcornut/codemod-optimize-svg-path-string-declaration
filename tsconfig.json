@@ -6,6 +6,7 @@
     "isolatedModules": true,
     "module": "NodeNext",
     "skipLibCheck": true,
+    "moduleResolution": "nodenext",
     "strict": true,
     "target": "ES6",
     "allowJs": true
