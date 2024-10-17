@@ -1,6 +1,6 @@
 {
   "name": "optimize-svg-path-string-declaration",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "engine": "workflow",
   "private": false,
   "arguments": [],
