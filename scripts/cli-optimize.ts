@@ -1,6 +1,6 @@
 #!/usr/bin/env bun
 
-import fs from 'node:fs';
-import { multiPassOptimizePath } from "./src/optimize";
+import fs from "node:fs";
+import { multiPassOptimizePath } from "./optimize";
 
 console.log(multiPassOptimizePath(String(fs.readFileSync(0))));

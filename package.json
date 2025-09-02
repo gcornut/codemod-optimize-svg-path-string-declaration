@@ -1,28 +1,30 @@
 {
-  "name": "optimize-svg-path-string-declaration",
-  "author": "gcornut",
-  "version": "1.0.6",
-  "description": "Optimize SVG path in string literal",
-  "type": "module",
-  "devDependencies": {
-    "@codemod.com/codemod-utils": "*",
-    "@codemod.com/jssg-types": "^1.0.3",
-    "@codemod.com/workflow": "*",
-    "@types/node": "20.9.0",
-    "codemod": "^1.0.2",
-    "svg-path-editor-lib": "^1.0.1",
-    "svgo": "^3.3.2",
-    "typescript": "5.6.2"
-  },
-  "scripts": {
-    "test": "yarn codemod jssg test -l typescript ./scripts/codemod.ts",
-    "check-types": "npx tsc --noEmit"
-  },
-  "license": "MIT",
-  "files": [
-    "README.md",
-    ".codemodrc.json",
-    "./dist/index.cjs"
-  ],
-  "packageManager": "yarn@4.9.4"
+    "name": "optimize-svg-path-string-declaration",
+    "author": "gcornut",
+    "version": "1.0.6",
+    "description": "Optimize SVG path in string literal",
+    "type": "module",
+    "devDependencies": {
+        "@codemod.com/codemod-utils": "*",
+        "@codemod.com/jssg-types": "^1.0.3",
+        "@codemod.com/workflow": "*",
+        "@types/node": "20.9.0",
+        "codemod": "^1.0.2",
+        "prettier": "^3.6.2",
+        "svg-path-editor-lib": "^1.0.1",
+        "svgo": "^3.3.2",
+        "typescript": "5.6.2"
+    },
+    "scripts": {
+        "test": "yarn codemod jssg test -l typescript ./scripts/codemod.ts",
+        "check-types": "npx tsc --noEmit",
+        "format": "prettier --write ."
+    },
+    "license": "MIT",
+    "files": [
+        "README.md",
+        ".codemodrc.json",
+        "./dist/index.cjs"
+    ],
+    "packageManager": "yarn@4.9.4"
 }

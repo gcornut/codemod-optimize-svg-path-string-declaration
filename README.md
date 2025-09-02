@@ -9,7 +9,7 @@ Optimize SVG path in string literal
 codemod run optimize-svg-path-string-declaration
 
 # Or run locally
-codemod run -w workflow.yaml
+yarn codemod workflow run -w workflow.yaml
 ```
 
 ## Usage
@@ -18,24 +18,27 @@ This codemod transforms string const declaration of SVG path to optimize it
 
 ```ts
 // Before
-export const icon1 = 'M150 5 L75 200 L225 200 Z';
+export const icon1 = "M150 5 L75 200 L225 200 Z";
 
 // After
-export const icon1 = 'M150 5 75 200h150Z';
+export const icon1 = "M150 5 75 200h150Z";
 ```
 
 ## Development
 
 ```bash
 # Test the transformation
-npm test
+yarn test
+
+# Prettier format
+yarn format
 
 # Validate the workflow
-codemod validate -w workflow.yaml
+yarn codemod workflow validate -w workflow.yaml
 
 # Publish to registry
-codemod login
-codemod publish
+yarn codemod login
+yarn codemod publish
 ```
 
 ## License

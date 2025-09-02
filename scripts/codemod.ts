@@ -6,32 +6,34 @@ import { multiPassOptimizePath } from "./optimize";
 const SVG_PATH_START_RX = /^[Mm]\d/;
 
 async function transform(root: SgRoot<TS>): Promise<string> {
-	const rootNode = root.root();
+    const rootNode = root.root();
 
-	const singleQuoteNodes = rootNode.findAll({
-		rule: {
-			pattern: "'$VALUE'",
-		},
-	});
+    const singleQuoteNodes = rootNode.findAll({
+        rule: {
+            pattern: "'$VALUE'",
+        },
+    });
 
-	const doubleQuoteNodes = rootNode.findAll({
-		rule: {
-			pattern: '"$VALUE"',
-		},
-	});
+    const doubleQuoteNodes = rootNode.findAll({
+        rule: {
+            pattern: '"$VALUE"',
+        },
+    });
 
-	const edits = [...singleQuoteNodes, ...doubleQuoteNodes].map((node) => {
-		const value = node.getMatch("VALUE")?.text();
-		if (!value || !SVG_PATH_START_RX.test(value)) {
-			return null;
-		}
-		const optimized = multiPassOptimizePath(value);
-		return node.replace(`"${optimized}"`);
-	}).filter(Boolean);
+    const edits = [...singleQuoteNodes, ...doubleQuoteNodes]
+        .map((node) => {
+            const value = node.getMatch("VALUE")?.text();
+            if (!value || !SVG_PATH_START_RX.test(value)) {
+                return null;
+            }
+            const optimized = multiPassOptimizePath(value);
+            return node.replace(`"${optimized}"`);
+        })
+        .filter(Boolean);
 
-	// @ts-ignore
-	const newSource = rootNode.commitEdits(edits);
-	return newSource;
+    // @ts-ignore
+    const newSource = rootNode.commitEdits(edits);
+    return newSource;
 }
 
 export default transform;
