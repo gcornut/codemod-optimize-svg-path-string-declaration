@@ -1,9 +1,9 @@
 schema_version: "1.0"
 
-name: "optimize-svg-path-string-declaration"
-version: "0.1.0"
+name: "@gcornut/optimize-svg-path-string-declaration"
+version: "1.0.7"
 description: "Optimize SVG path in string literal"
-author: "Author <author@example.com>"
+author: "gcornut <gcornut@users.noreply.github.com>"
 license: "MIT"
 workflow: "workflow.yaml"
 category: "migration"

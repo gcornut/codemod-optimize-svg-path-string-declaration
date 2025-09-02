@@ -1,7 +1,7 @@
 {
     "name": "optimize-svg-path-string-declaration",
     "author": "gcornut",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Optimize SVG path in string literal",
     "type": "module",
     "devDependencies": {
