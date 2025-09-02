@@ -1,0 +1,18 @@
+{
+	"name": "optimize-svg-path-string-declaration",
+	"version": "0.1.0",
+	"description": "Optimize SVG path in string literal",
+	"type": "module",
+	"devDependencies": {
+		"@codemod.com/jssg-types": "^1.0.3",
+		"codemod": "^1.0.2",
+		"svg-path-editor-lib": "^1.0.1",
+		"svgo": "^3.3.2",
+		"typescript": "^5.8.3"
+	},
+	"scripts": {
+		"test": "npx codemod@latest jssg test -l typescript ./scripts/codemod.ts",
+		"check-types": "npx tsc --noEmit"
+	},
+	"packageManager": "yarn@4.9.4"
+}
