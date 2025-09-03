@@ -655,7 +655,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@codemod.com/jssg-types@npm:^1.0.3":
+"@codemod.com/jssg-types@npm:1.0.3":
   version: 1.0.3
   resolution: "@codemod.com/jssg-types@npm:1.0.3"
   checksum: 10c0/b90a15e604355f6a335027e0c1324172fc19d8365d2c461067115a1e0bd7c705f95b51ede64826f4c2eb09ce39dad60b47a8316cb3a48ae2444bdcdaee14abe1
@@ -2408,7 +2408,7 @@ __metadata:
   resolution: "optimize-svg-path-string-declaration@workspace:."
   dependencies:
     "@codemod.com/codemod-utils": "npm:*"
-    "@codemod.com/jssg-types": "npm:^1.0.3"
+    "@codemod.com/jssg-types": "npm:1.0.3"
     "@codemod.com/workflow": "npm:*"
     "@types/node": "npm:20.9.0"
     codemod: "npm:^1.0.2"

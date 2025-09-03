@@ -1,27 +1,14 @@
 {
     "compilerOptions": {
-        "outDir": "./dist",
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "isolatedModules": true,
-        "module": "NodeNext",
-        "skipLibCheck": true,
-        "moduleResolution": "nodenext",
-        "strict": true,
-        "target": "ES6",
-        "allowJs": true,
-        "types": ["@codemod.com/jssg-types"],
         "allowImportingTsExtensions": true,
         "noEmit": true,
-        "verbatimModuleSyntax": true,
-        "strictNullChecks": true,
-        "noImplicitReturns": true,
-        "noFallthroughCasesInSwitch": true,
-        "noUncheckedIndexedAccess": true
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "types": ["@codemod.com/jssg-types", "node"]
     },
-    "include": ["./src/**/*.ts", "./src/**/*.js"],
-    "exclude": ["node_modules", "./dist/**/*", "tests"],
-    "ts-node": {
-        "transpileOnly": true
-    }
+    "include": ["./scripts/**/*.ts", "tests/**/*.ts", "types/*.d.ts"],
+    "exclude": ["node_modules", "./dist/**/*"]
 }

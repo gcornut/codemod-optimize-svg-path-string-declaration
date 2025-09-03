@@ -1,4 +1,4 @@
-import { optimizeSVGPath } from "./svgo";
+import { optimizeSVGPath } from "./svgo/index.ts";
 import { SvgPath, optimizePath } from "svg-path-editor-lib";
 
 export function multiPassOptimizePath(path: string) {

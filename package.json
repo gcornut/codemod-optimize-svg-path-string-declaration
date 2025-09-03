@@ -6,7 +6,7 @@
     "type": "module",
     "devDependencies": {
         "@codemod.com/codemod-utils": "*",
-        "@codemod.com/jssg-types": "^1.0.3",
+        "@codemod.com/jssg-types": "1.0.3",
         "@codemod.com/workflow": "*",
         "@types/node": "20.9.0",
         "codemod": "^1.0.2",
@@ -16,8 +16,8 @@
         "typescript": "5.6.2"
     },
     "scripts": {
-        "test": "yarn codemod jssg test -l typescript ./scripts/codemod.ts",
-        "check-types": "npx tsc --noEmit",
+        "test": "codemod jssg test -l typescript ./scripts/codemod.ts",
+        "check-types": "tsc --noEmit",
         "format": "prettier --write ."
     },
     "license": "MIT",
